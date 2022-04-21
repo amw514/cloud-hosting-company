@@ -136,3 +136,19 @@ a{
     }
     
 }
+/* Icons */
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--primary{
+    fill: var(--color-primary);
+}
+.icon-container{
+    width: 64px;
+    height: 64px;
+    background: gold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
