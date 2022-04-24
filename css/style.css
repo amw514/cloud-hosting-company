@@ -146,32 +146,37 @@ a{
     
 }
 /* Icons */
-.icon{
+.icon {
     width: 40px;
     height: 40px;
-}
-.icon--small{
+  }
+  
+  .icon--small {
     width: 30px;
     height: 30px;
-}
-.icon--primary{
+  }
+  
+  .icon--primary {
     fill: var(--color-primary);
-}
-.icon--white{
+  }
+  
+  .icon--white {
     fill: #fff;
-}
-.icon-container{
+  }
+  
+  .icon-container {
+    background: #f3f9fa;
     width: 64px;
     height: 64px;
     border-radius: 100%;
-    background: #f3f9fa;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-.icon-container--accent{
-background: var(--color-accent);
-}
+  }
+  
+  .icon-container--accent {
+    background: var(--color-accent);
+  }
 /* Buttons */
 
 .btn {
@@ -471,3 +476,34 @@ align-self: center;
     }
     
 }
+/* collapsible */
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  
+  .collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+  }
+  
+  .collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+  }
+  
+  .collapsible--expanded .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+  }
