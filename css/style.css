@@ -175,7 +175,6 @@ a {
 .list--tick {
     list-style-image: url('../images/tick.svg');
     padding-left: 3rem;
-    color: var(--color-headings);
 
 }
 
@@ -329,7 +328,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
-    width: 0
+    width: 0;
 }
 
 .input-group .btn {
@@ -767,7 +766,9 @@ a {
 
 .block-domain__prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    color: var(--color-headings);
+
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
